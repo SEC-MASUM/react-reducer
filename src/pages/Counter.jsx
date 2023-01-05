@@ -13,17 +13,19 @@ const Counter = () => {
   };
   const [state, dispatch] = useReducer(reducer, initialState);
   return (
-    <div className="bg-cyan-100 border-cyan-400 border-2 rounded-xl w-80 mt-32 mx-auto self-center p-10">
-      <h1 className="p-3 font-bold text-2xl  text-center">{state}</h1>
+    <div className="bg-emerald-50 border-emerald-100 border-4 rounded-xl w-4/12 mt-32 mx-auto self-center p-10">
+      <h1 className="p-3 font-bold text-slate-500 text-2xl  text-center">
+        {state}
+      </h1>
       <div className="flex justify-center gap-4">
         <button
-          className="bg-purple-400 text-white font-bold rounded p-3"
+          className="bg-purple-200  rounded p-3"
           onClick={() => dispatch({ type: "DECREMENT" })}
         >
           Decrement
         </button>
         <button
-          className="bg-emerald-400 rounded text-white font-bold p-3"
+          className=" bg-cyan-200 rounded   p-3"
           onClick={() => dispatch({ type: "INCREMENT" })}
         >
           Increment
