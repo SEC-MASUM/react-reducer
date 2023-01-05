@@ -6,8 +6,8 @@ function App(props) {
   return (
     <>
       {/* <ShortForm /> */}
-      {/* <LongForm /> */}
-      <Counter />
+      <LongForm />
+      {/* <Counter /> */}
     </>
   );
 }
